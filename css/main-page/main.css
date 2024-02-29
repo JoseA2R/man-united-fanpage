@@ -8,6 +8,14 @@ Textos - Source Sans 3
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* Estructura general */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #1E1E1E;
+    --principal: #C70102;
+    --claro: #EDE9D0;
+    --gris: #6F6F6F;
+}
+
 body {
     margin: 0;
 }
@@ -37,7 +45,7 @@ p{
 }
 
 .text-white {
-    color: #fff;
+    color: var(--blanco);
 }
 
 .text-center {
@@ -56,7 +64,7 @@ p{
     font-weight: 600;
     font-size: 14PX;
     text-transform: uppercase;
-    background-color: #c70101;
+    background-color: var(--principal);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px 0px;
     display: flex;
     position: relative;
@@ -67,7 +75,7 @@ p{
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--blanco);
     text-decoration: none;
     padding-right: 1em;
 }
@@ -83,8 +91,39 @@ p{
     justify-content: center;
 }
 
+.title-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 200px;
+    height: 150px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-item p {
+    max-width: 12rem;
+}
+
+.image-eventos img {
+    width: 200px;
+    height: auto;
+}
+
 .wwa-container {
     max-width: 500px;
+    margin: 0 auto;
 }
 
 .wwa-description {
@@ -93,7 +132,7 @@ p{
 }
 
 .history {
-    background-color: #c70101;
+    background-color: var(--principal);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,10 +144,10 @@ p{
     text-transform: uppercase;
     display: flex;
     width: 200px;
-    color: white;
+    color: var(--blanco);
     cursor: pointer;
-    background-color: #c70101;
-    border: 1px solid #fff;
+    background-color: var(--principal);
+    border: 1px solid var(--blanco);
     border-radius: 20px;
     padding: 5px 20px;
     justify-content: center;
@@ -116,8 +155,8 @@ p{
 }
 
 .history-btn:hover {
-    background-color: #2a2a2a;
-    border: 1px solid #2a2a2a;
+    background-color: var(--oscuro);
+    border: 1px solid var(--oscuro);
     
 }
 
@@ -136,7 +175,16 @@ p{
 
 /* Pie de pagina */
 footer {
-    background-color: #2a2a2a;
+    background-color: var(--oscuro);
     width: 100%;
     min-height: 50px;
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--blanco);
+}
+
+/** Estilos sections **/
+.sectionCommon {
+    display: flex;
+    flex-direction: column;
 }
