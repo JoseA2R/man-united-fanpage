@@ -114,7 +114,12 @@ p{
 .nav-link {
     color: #fff;
     text-decoration: none;
-    padding-right: 1em;
+    padding-right: 2em;
+    transition: .25s ease-in-out
+}
+
+.nav-link:hover{
+    transform: scale(1.15);
 }
 
 /* Contenido pagina principal */
