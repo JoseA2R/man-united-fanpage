@@ -1,0 +1,82 @@
+/*
+Fuentes sugeridas de inicio, usadas en https://www.manutd.com/
+Menú - Montserrat (Semi Bold)
+Titulos - Bebas Neu
+Textos - Source Sans 3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Estructura general */
+body {
+    margin: 0;
+}
+
+main {
+    padding-top: 0px;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+}
+
+/* Utilidades */
+.w-100 {
+    width: 100%;
+}
+
+.mw-80 {
+    max-width: 80%;
+}
+
+.section-spacing {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Menú */
+.main-logo {
+    width: 60px;
+    height: 60px;
+    padding: 5px 20px;
+}
+
+.main-nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14PX;
+    text-transform: uppercase;
+    background-color: #c70101;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 4px 0px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 2em;
+    transition: .25s ease-in-out
+}
+
+.nav-link:hover{
+    transform: scale(1.15);
+}
